@@ -299,6 +299,11 @@ export const ResponseCompletedEventSchema = z.object({
   response: ResponseResourceSchema,
 });
 
+export const ResponseIncompleteEventSchema = z.object({
+  type: z.literal("response.incomplete"),
+  response: ResponseResourceSchema,
+});
+
 export const ResponseFailedEventSchema = z.object({
   type: z.literal("response.failed"),
   response: ResponseResourceSchema,
