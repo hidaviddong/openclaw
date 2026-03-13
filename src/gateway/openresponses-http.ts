@@ -3,7 +3,7 @@
  *
  * Implements the OpenResponses `/v1/responses` endpoint for OpenClaw Gateway.
  *
- * @see https://www.open-responses.com/
+ * @see https://www.openresponses.org/
  */
 
 import { randomUUID } from "node:crypto";

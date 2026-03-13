@@ -4,7 +4,7 @@
  * Zod schemas for the OpenResponses `/v1/responses` endpoint.
  * This module is isolated from gateway imports to enable future codegen and prevent drift.
  *
- * @see https://www.open-responses.com/
+ * @see https://www.openresponses.org/
  */
 
 import { z } from "zod";
