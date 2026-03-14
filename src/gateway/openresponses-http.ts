@@ -681,6 +681,14 @@ export async function handleOpenResponsesHttpRequest(
       return;
     }
 
+    if (evt.stream === "tool") {
+      writeSseEvent(res, {
+        type: "openclaw.tool",
+        ...evt.data,
+      });
+      return;
+    }
+
     if (evt.stream === "lifecycle") {
       const phase = evt.data?.phase;
       if (phase === "end" || phase === "error") {
